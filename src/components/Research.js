@@ -1,9 +1,9 @@
-import React, { useState } from "react"
+import React from "react"
 import Search from "./Search"
 import Stock from "./Stock"
 import TradingViewWidget from "./TradingViewWidget"
 
-function Research({ stock, onSearch, searchInput, allTickers, onSelectedTicker, exchange}) {
+function Research({ stock, onSearch, searchInput, allTickers, onSelectedTicker, onBuyStock, onOrder }) {
 // const [search, setSearch] = useState("")
 
 
@@ -17,29 +17,30 @@ function handleClick(s) {
     
 }   
 
-// function handleHover(e){
-// e.preventDefault()
-// console.log(e.type)
-// if(e.type === 'mouseover') {
-//     e.target.style.color = "red"
-// } else {
-//     e.target.style.color = "black"
-// }   
+function handleHover(e){
+e.preventDefault()
+console.log(e.type)
+if(e.type === 'mouseover') {
+    e.target.style.color = "red"
+} else {
+    e.target.style.color = "black"
+}   
 
-
+}
 
 
 const viewableStocks = allTickers.map((s) => (
-        <li key={s.indexOf}
+        <li key={s.id}
         onClick={handleClick}
-       
+        onMouseOver={handleHover}
+        onMouseOut={handleHover}
         >
             <p value={s.ticker}>{s.ticker}</p>
         
         </li>
     ))
 
-// console.log(search)
+
         
        
     return (
@@ -51,10 +52,10 @@ const viewableStocks = allTickers.map((s) => (
                  </ul>
             </div>
             <div>
-                <TradingViewWidget stock={stock} exchange={exchange}/>
+                <TradingViewWidget stock={stock} />
             </div>
             <div>
-                <Stock stock={stock} />
+                <Stock stock={stock} onBuyStock={onBuyStock} allTickers={allTickers} onOrder={onOrder} />
             </div>
             
         </div>
