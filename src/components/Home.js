@@ -1,12 +1,21 @@
 import React from "react"
 
 function Home() {
+
+
+
     return (
-        <div>
-            
-        <h1 className="text-3xl font-bold underline">
-      Home!
-        </h1>
+      
+      <div style={{  
+        backgroundImage: "url(/DM.png)",
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        height: '1000px'
+      }}>
+
+        
+       
         </div>
     )
 }

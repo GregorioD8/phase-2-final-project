@@ -1,77 +1,82 @@
-# Getting Started with Create React App
+# Phase 2 React project
+### `What I learned`
+- How to use the react framework to create an app 
+- How to use external API's
+- How to create local API  
+- How many tools and libraries are out there to build efficiently
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `setup`
 
-## Available Scripts
+- Run `json-server --watch db.json --port 8080`
+- Run `npm start`
 
-In the project directory, you can run:
+### `Server`
 
-### `npm start`
+The db.json is an object with an array of orders and an array of tickers
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`tickers` 
+from the sec.gov API
+it has every ticker in the stock market available. I trimmed it down for the project. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`orders`
+from orders posted in the app
 
-### `npm test`
+### `Endpoints`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+the app is a single page application that uses client side routing 
 
-### `npm run build`
+the endpoints are 
+/home
+/research
+/portfolio
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+/home is the landing page
+/research is where you search a ticker and it renders a stock chart, and a stock card where you can open an order to buy shares
+/portfolio shows your portfolio total and how your money is allocated. It also shows all of your orders.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `App`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+useEffect and useState
+`GET` from local API to get allOrders
+--update state with this data using `setAllOrders`
+`GET` from Polygon.io to get the queried stock information 
+--update state with this data using `setStock`
+`GET` from local API to get allTickers 
+--update state with this data using `setAllTickers`
 
-### `npm run eject`
+### `Header`
+A header to display the navigation buttons
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-Components used
+-`NavBar` for clientside routing to navigate to /home /research /portfolio
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Home`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This page is a landing page with no functionality  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `Research`
 
-## Learn More
+-Components Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-`Search`
+This component uses the user input to show the suggested tickers that include the letters typed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-`TradingViewWidget`
+This component is supplied by Tradingview.com
+The searched ticker is used to update the TradinviewWidget symbol
 
-### Code Splitting
+-`Stock`
+A `PATCH` is used to update the stock on the local API as `isOwned` and updates the `total` number of shares owned
+A  `GET`  is used to get the latest stock price from alphavantage.co and create a new order object
+A `POST` is used to post the `newOrder` object to `/orders`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `Portfolio`
 
-### Analyzing the Bundle Size
+A Table of all the orders
+A chart of portfolio holdings
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-Components used
 
-### Making a Progressive Web App
+-`Chart`
+credit to plotly.com for the chart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-
-
-
-<!-- //////////////
-json-server --watch db. json  -->
