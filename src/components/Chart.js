@@ -18,7 +18,7 @@ function Chart({ ownedStocks, total }) {
             text: ownedStocks.map((s) => s.shares)
           },
         ]}
-        layout={ { width: 1000, height: 700, title: 'Asset Allocation',xaxis: {title: `Portfolio Total: $${parseFloat(total).toFixed(2)}`}, font: {
+        layout={ { width: 1000, height: 700, title: 'Asset Allocation',xaxis: {title: `Portfolio Total: $${total.toLocaleString(undefined, {maximumFractionDigits:2})}`}, font: {
           size: 18,
           color: '#1F2937'
         } } }

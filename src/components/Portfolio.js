@@ -16,7 +16,7 @@ function Portfolio({ allTickers, allOrders, ownedStocks }) {
             <td>{o.ticker}</td>
             <td>{o.numberOrdered}</td>
             <td>{"$ " + o.pricePaid}</td>
-            <td>{"$ " + parseFloat(o.total).toFixed(2)}</td>
+            <td>{"$ " + o.total.toLocaleString(undefined, {maximumFractionDigits:2})}</td>
             <td>{o.date}</td>
         </tr>
     ))
