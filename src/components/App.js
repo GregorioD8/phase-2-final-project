@@ -5,7 +5,7 @@ import Research from "./Research"
 import Portfolio from "./Portfolio"
 import Header from "./Header"
 import Footer from "./Footer"
-
+// API Token: za91pXsAgSxpvksuEV4YReHeHNBowXVu9r8LpQKA
 let tvScriptLoadingPromise;
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
   const [stock, setStock] = useState("TSLA")
   const [query, setQuery] = useState(null)
   const [allOrders, setAllOrders] = useState([])
+  const [ownedStocks, setOwnedStocks] = useState([])
 
   useEffect(() => {
     fetch(" http://localhost:8080/orders")
@@ -38,26 +39,31 @@ function App() {
      .then((res) => res.json()) 
      .then((data) => {
       setAllTickers(data)
+ 
     })
  }, [])
-
+//sets the search input per character to see what tickers include the input
  function onSearch(input) {
   setSearchInput(input)
 }
-
+//sets the ticker to search for 
 function handleSelectedTicker(ticker){
   setQuery(ticker)
   setSearchInput("")
 }
 
 //purchase x amount of shares of a stonk
+//sets state for ownedStocks to update the chart in portfolio
 function handleBuyStock(number, stonk) {
   const allStocks = (allTickers.map((t) => t.ticker === stonk.ticker ? {...t, shares: number} : t ))
   setAllTickers(allStocks)
-}
-
+  setOwnedStocks(allStocks.filter((s) => s.isOwned))
+  
+} 
+//update orders
 function handleOrder(newOrder) {
   setAllOrders([...allOrders, newOrder])
+  
 }
 
 //search by ticker 
@@ -65,7 +71,7 @@ const filteredTickers = allTickers.filter((t) => {
   return t.ticker.toLowerCase().includes(searchInput.toLowerCase())
 })
 
-//Tradingview.com
+//Thank you Tradingview.com
 /////////////////////////////////////////////////////////////////////////////////////
 useEffect(
   () => {
@@ -115,7 +121,7 @@ useEffect(
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-const ownedStocks = allTickers.filter((t) => t.isOwned)
+
 
   return (
    <div>

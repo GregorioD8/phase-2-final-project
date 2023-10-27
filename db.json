@@ -1,52 +1,44 @@
 {
   "orders": [
     {
-      "ticker": "PLTR",
-      "numberOrdered": 33,
-      "pricePaid": "15.59",
-      "total": 514.47,
-      "date": "10/26/2023, 11:04:56 AM",
+      "ticker": "AAPL",
+      "numberOrdered": 2,
+      "pricePaid": "166.89",
+      "total": 333.78,
+      "date": "10/26/2023, 6:45:31 PM",
       "id": 1
     },
     {
-      "ticker": "AMZN",
-      "numberOrdered": 18,
-      "pricePaid": "121.39",
-      "total": 2185.02,
-      "date": "10/26/2023, 11:05:28 AM",
+      "ticker": "AAPL",
+      "numberOrdered": 2,
+      "pricePaid": "166.89",
+      "total": 333.78,
+      "date": "10/26/2023, 6:47:03 PM",
       "id": 2
     },
     {
-      "ticker": "TSLA",
-      "numberOrdered": 25,
-      "pricePaid": "212.42",
-      "total": 5310.5,
-      "date": "10/26/2023, 11:06:07 AM",
+      "ticker": "AAPL",
+      "numberOrdered": 3,
+      "pricePaid": "166.89",
+      "total": 500.66999999999996,
+      "date": "10/26/2023, 6:48:19 PM",
       "id": 3
+    },
+    {
+      "ticker": "NVDA",
+      "numberOrdered": 3,
+      "pricePaid": "403.26",
+      "total": 1209.78,
+      "date": "10/26/2023, 6:53:03 PM",
+      "id": 4
     },
     {
       "ticker": "AAPL",
       "numberOrdered": 4,
-      "pricePaid": "171.10",
-      "total": 684.4,
-      "date": "10/26/2023, 11:08:29 AM",
-      "id": 4
-    },
-    {
-      "ticker": "META",
-      "numberOrdered": 20,
-      "pricePaid": "299.53",
-      "total": 5990.599999999999,
-      "date": "10/26/2023, 11:17:00 AM",
+      "pricePaid": "166.89",
+      "total": 667.56,
+      "date": "10/26/2023, 6:55:52 PM",
       "id": 5
-    },
-    {
-      "ticker": "TSM",
-      "numberOrdered": 24,
-      "pricePaid": "87.64",
-      "total": 2103.36,
-      "date": "10/26/2023, 11:19:09 AM",
-      "id": 6
     }
   ],
   "tickers": [
@@ -56,7 +48,7 @@
       "title": "Apple Inc.",
       "id": 0,
       "isOwned": true,
-      "shares": 4
+      "shares": 11
     },
     {
       "cik_str": 789019,
@@ -79,32 +71,32 @@
       "ticker": "AMZN",
       "title": "AMAZON COM INC",
       "id": 3,
-      "isOwned": true,
-      "shares": 18
+      "isOwned": false,
+      "shares": 0
     },
     {
       "cik_str": 1045810,
       "ticker": "NVDA",
       "title": "NVIDIA CORP",
       "id": 4,
-      "isOwned": false,
-      "shares": 0
+      "isOwned": true,
+      "shares": 3
     },
     {
       "cik_str": 1326801,
       "ticker": "META",
       "title": "Meta Platforms, Inc.",
       "id": 5,
-      "isOwned": true,
-      "shares": 20
+      "isOwned": false,
+      "shares": 0
     },
     {
       "cik_str": 1318605,
       "ticker": "TSLA",
       "title": "Tesla, Inc.",
       "id": 6,
-      "isOwned": true,
-      "shares": 25
+      "isOwned": false,
+      "shares": 0
     },
     {
       "cik_str": 1067983,
@@ -143,8 +135,8 @@
       "ticker": "TSM",
       "title": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
       "id": 11,
-      "isOwned": true,
-      "shares": 24
+      "isOwned": false,
+      "shares": 0
     },
     {
       "cik_str": 353278,
@@ -2511,8 +2503,8 @@
       "ticker": "PLTR",
       "title": "Palantir Technologies Inc.",
       "id": 307,
-      "isOwned": true,
-      "shares": 33
+      "isOwned": false,
+      "shares": 0
     },
     {
       "cik_str": 1071739,
