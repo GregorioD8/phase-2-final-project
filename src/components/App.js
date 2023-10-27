@@ -30,7 +30,10 @@ function App() {
     if(query) 
     fetch(`https://api.polygon.io/v3/reference/tickers/${query}?apiKey=OXxvtXjwdGI1eZtG84j2pRe8FvF8ydAl`)
     .then((res) => res.json())
-    .then((data) => setStock(data.results))
+    .then((data) => {
+      setStock(data.results)
+      console.log("polygon")
+    } )
   }, [query])
 
   //thanks sec.gov
@@ -39,11 +42,14 @@ function App() {
      .then((res) => res.json()) 
      .then((data) => {
       setAllTickers(data)
+      const updatedOwned = data.filter((t) => t.isOwned)
+      setOwnedStocks(updatedOwned)
  
     })
  }, [])
 //sets the search input per character to see what tickers include the input
  function onSearch(input) {
+  
   setSearchInput(input)
 }
 //sets the ticker to search for 
@@ -57,13 +63,17 @@ function handleSelectedTicker(ticker){
 function handleBuyStock(number, stonk) {
   const allStocks = (allTickers.map((t) => t.ticker === stonk.ticker ? {...t, shares: number} : t ))
   setAllTickers(allStocks)
-  setOwnedStocks(allStocks.filter((s) => s.isOwned))
-  
+
+  if(!ownedStocks.includes(stonk)){
+    setOwnedStocks([...ownedStocks, stonk])
+  }
 } 
+
 //update orders
 function handleOrder(newOrder) {
   setAllOrders([...allOrders, newOrder])
-  
+  console.log("handleOrder")
+
 }
 
 //search by ticker 
@@ -121,8 +131,6 @@ useEffect(
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-
-
   return (
    <div>
             <Router>
@@ -139,7 +147,6 @@ useEffect(
                 onOrder={handleOrder}
                 />} />      
                 <Route path="/portfolio" element={<Portfolio 
-                allTickers={allTickers}
                 allOrders={allOrders}
                 ownedStocks={ownedStocks}
                 />} />

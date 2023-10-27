@@ -9,7 +9,7 @@ function Chart({ ownedStocks, total }) {
 
         data={[
           {
-            x: ownedStocks.map((s) => s.ticker) ,
+            x: ownedStocks.map((s) => s.ticker),
             y: ownedStocks.map((s) => s.shares),
             type: 'bar',
             mode: 'markers',
@@ -18,7 +18,7 @@ function Chart({ ownedStocks, total }) {
             text: ownedStocks.map((s) => s.shares)
           },
         ]}
-        layout={ { width: 1000, height: 700, title: 'Asset Allocation',xaxis: {title: `Portfolio Total: $${total.toLocaleString(undefined, {maximumFractionDigits:2})}`}, font: {
+        layout={ { width: 1000, height: 700, title: 'Asset Allocation',xaxis: {title: `Portfolio Total: $${total}`}, font: {
           size: 18,
           color: '#1F2937'
         } } }

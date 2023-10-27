@@ -13,7 +13,7 @@ function Home() {
         backgroundRepeat: 'no-repeat',
         height: '1000px'
       }}>
-
+        
         
        
         </div>

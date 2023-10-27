@@ -2,7 +2,7 @@ import React from "react"
 import Chart from "./Chart"
 
 
-function Portfolio({ allTickers, allOrders, ownedStocks }) {
+function Portfolio({ allOrders, ownedStocks }) {
     // {
     //     "ticker": "AMZN",
     //     "numberOrdered": 3,
@@ -16,13 +16,14 @@ function Portfolio({ allTickers, allOrders, ownedStocks }) {
             <td>{o.ticker}</td>
             <td>{o.numberOrdered}</td>
             <td>{"$ " + o.pricePaid}</td>
-            <td>{"$ " + o.total.toLocaleString(undefined, {maximumFractionDigits:2})}</td>
+            <td>{"$ " + o.total}</td>
             <td>{o.date}</td>
         </tr>
     ))
-    const initialValue = 0
+  
     const totalPortfolio = allOrders.map((o) => o.total)
-    const myTotal = totalPortfolio.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue)
+    const myTotal = totalPortfolio.reduce((accumulator, currentValue) => accumulator + currentValue, 0).toFixed(2)
+
     return (    
 
         <div >
