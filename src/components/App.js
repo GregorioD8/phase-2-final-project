@@ -8,21 +8,32 @@ import Footer from "./Footer"
 // API Token: za91pXsAgSxpvksuEV4YReHeHNBowXVu9r8LpQKA
 let tvScriptLoadingPromise;
 
+
 function App() {
 
   const onLoadScriptRef = useRef();
-
   const [allTickers, setAllTickers] = useState([])
   const [searchInput, setSearchInput] = useState("")
   const [stock, setStock] = useState("TSLA")
   const [query, setQuery] = useState(null)
   const [allOrders, setAllOrders] = useState([])
-  const [ownedStocks, setOwnedStocks] = useState([])
+  const [news, setNews] = useState(null)
+
+
+  useEffect(() => {
+    fetch(" http://localhost:8080/news")
+    .then((res) => res.json()) 
+    .then((data) => {
+      setNews(data[0].results)
+    })
+     
+}, [])
 
   useEffect(() => {
     fetch(" http://localhost:8080/orders")
     .then((res) => res.json()) 
-    .then((data) => setAllOrders(data))
+    .then((data) => 
+      setAllOrders(data))
 }, [])
 
   //thank you polygon.io
@@ -42,9 +53,6 @@ function App() {
      .then((res) => res.json()) 
      .then((data) => {
       setAllTickers(data)
-      const updatedOwned = data.filter((t) => t.isOwned)
-      setOwnedStocks(updatedOwned)
- 
     })
  }, [])
 //sets the search input per character to see what tickers include the input
@@ -63,10 +71,6 @@ function handleSelectedTicker(ticker){
 function handleBuyStock(number, stonk) {
   const allStocks = (allTickers.map((t) => t.ticker === stonk.ticker ? {...t, shares: number} : t ))
   setAllTickers(allStocks)
-
-  if(!ownedStocks.includes(stonk)){
-    setOwnedStocks([...ownedStocks, stonk])
-  }
 } 
 
 //update orders
@@ -136,7 +140,7 @@ useEffect(
             <Router>
               <Header />
             <Routes>
-                <Route path="/" element={<Home/>} />
+                <Route path="/" element={<Home news={news} />} />
                 <Route path="/research" element={<Research 
                 onSearch={onSearch} 
                 searchInput={searchInput} 
@@ -148,7 +152,8 @@ useEffect(
                 />} />      
                 <Route path="/portfolio" element={<Portfolio 
                 allOrders={allOrders}
-                ownedStocks={ownedStocks}
+              allTickers={allTickers}
+
                 />} />
             </Routes>
             <Footer />

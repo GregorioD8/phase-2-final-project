@@ -36,7 +36,7 @@ function Stock({ stock, onBuyStock, allTickers, onOrder }) {
             total: input * cost,
             date: new Date().toLocaleString()
           })
-   
+          
         }
       })
       .catch((error) => console.log(error))

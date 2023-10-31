@@ -1,28 +1,164 @@
 {
   "orders": [
     {
-      "ticker": "PLTR",
-      "numberOrdered": 11,
-      "pricePaid": "15.07",
-      "total": 165.77,
-      "date": "10/27/2023, 2:46:08 PM",
-      "id": 0
-    },
-    {
-      "ticker": "AMZN",
-      "numberOrdered": 13,
-      "pricePaid": "127.74",
-      "total": 1660.62,
-      "date": "10/27/2023, 2:49:03 PM",
+      "ticker": "NVDA",
+      "numberOrdered": 17,
+      "pricePaid": "411.61",
+      "total": 6997.37,
+      "date": "10/30/2023, 1:54:46 PM",
       "id": 1
     },
     {
-      "ticker": "AAPL",
-      "numberOrdered": 11,
-      "pricePaid": "15.07",
-      "total": 165.77,
-      "date": "10/27/2023, 2:46:08 PM",
+      "ticker": "TSLA",
+      "numberOrdered": 33,
+      "pricePaid": "197.36",
+      "total": 6512.88,
+      "date": "10/30/2023, 1:54:59 PM",
       "id": 2
+    },
+    {
+      "ticker": "PLTR",
+      "numberOrdered": 49,
+      "pricePaid": "14.69",
+      "total": 719.81,
+      "date": "10/30/2023, 1:55:14 PM",
+      "id": 3
+    },
+    {
+      "ticker": "META",
+      "numberOrdered": 29,
+      "pricePaid": "302.66",
+      "total": 8777.140000000001,
+      "date": "10/30/2023, 1:55:48 PM",
+      "id": 4
+    },
+    {
+      "ticker": "PLTR",
+      "numberOrdered": 5,
+      "pricePaid": "14.69",
+      "total": 73.45,
+      "date": "10/30/2023, 2:01:56 PM",
+      "id": 5
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 5,
+      "pricePaid": "170.29",
+      "total": 851.4499999999999,
+      "date": "10/30/2023, 2:10:20 PM",
+      "id": 6
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 4,
+      "pricePaid": "170.29",
+      "total": 681.16,
+      "date": "10/30/2023, 6:01:20 PM",
+      "id": 7
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 1,
+      "pricePaid": "170.29",
+      "total": 170.29,
+      "date": "10/30/2023, 6:08:42 PM",
+      "id": 8
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 2,
+      "pricePaid": "170.29",
+      "total": 340.58,
+      "date": "10/30/2023, 6:08:43 PM",
+      "id": 9
+    },
+    {
+      "ticker": "AMZN",
+      "numberOrdered": 2,
+      "pricePaid": "132.71",
+      "total": 265.42,
+      "date": "10/30/2023, 6:27:28 PM",
+      "id": 10
+    },
+    {
+      "ticker": "GOOGL",
+      "numberOrdered": 9,
+      "pricePaid": "124.46",
+      "total": 1120.1399999999999,
+      "date": "10/30/2023, 6:27:50 PM",
+      "id": 11
+    },
+    {
+      "ticker": "AMZN",
+      "numberOrdered": 3,
+      "pricePaid": "132.71",
+      "total": 398.13,
+      "date": "10/30/2023, 6:29:32 PM",
+      "id": 12
+    },
+    {
+      "ticker": "AMZN",
+      "numberOrdered": 4,
+      "pricePaid": "132.71",
+      "total": 530.84,
+      "date": "10/30/2023, 6:31:24 PM",
+      "id": 13
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 2,
+      "pricePaid": "170.29",
+      "total": 340.58,
+      "date": "10/30/2023, 6:36:27 PM",
+      "id": 14
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 2,
+      "pricePaid": "170.29",
+      "total": 340.58,
+      "date": "10/30/2023, 6:43:32 PM",
+      "id": 15
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 1,
+      "pricePaid": "170.29",
+      "total": 170.29,
+      "date": "10/30/2023, 6:47:19 PM",
+      "id": 16
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 2,
+      "pricePaid": "170.29",
+      "total": 340.58,
+      "date": "10/30/2023, 6:54:39 PM",
+      "id": 17
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 3,
+      "pricePaid": "170.29",
+      "total": 510.87,
+      "date": "10/30/2023, 6:55:12 PM",
+      "id": 18
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 4,
+      "pricePaid": "170.29",
+      "total": 681.16,
+      "date": "10/30/2023, 6:55:23 PM",
+      "id": 19
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 12,
+      "pricePaid": "170.29",
+      "total": 2043.48,
+      "date": "10/30/2023, 7:11:33 PM",
+      "id": 20
     }
   ],
   "tickers": [
@@ -32,7 +168,7 @@
       "title": "Apple Inc.",
       "id": 0,
       "isOwned": true,
-      "shares": 22
+      "shares": 38
     },
     {
       "cik_str": 789019,
@@ -47,8 +183,8 @@
       "ticker": "GOOGL",
       "title": "Alphabet Inc.",
       "id": 2,
-      "isOwned": false,
-      "shares": 0
+      "isOwned": true,
+      "shares": 9
     },
     {
       "cik_str": 1018724,
@@ -56,31 +192,31 @@
       "title": "AMAZON COM INC",
       "id": 3,
       "isOwned": true,
-      "shares": 13
+      "shares": 9
     },
     {
       "cik_str": 1045810,
       "ticker": "NVDA",
       "title": "NVIDIA CORP",
       "id": 4,
-      "isOwned": false,
-      "shares": 0
+      "isOwned": true,
+      "shares": 17
     },
     {
       "cik_str": 1326801,
       "ticker": "META",
       "title": "Meta Platforms, Inc.",
       "id": 5,
-      "isOwned": false,
-      "shares": 0
+      "isOwned": true,
+      "shares": 29
     },
     {
       "cik_str": 1318605,
       "ticker": "TSLA",
       "title": "Tesla, Inc.",
       "id": 6,
-      "isOwned": false,
-      "shares": 0
+      "isOwned": true,
+      "shares": 33
     },
     {
       "cik_str": 1067983,
@@ -2488,7 +2624,7 @@
       "title": "Palantir Technologies Inc.",
       "id": 307,
       "isOwned": true,
-      "shares": 11
+      "shares": 54
     },
     {
       "cik_str": 1071739,
@@ -12328,6 +12464,364 @@
       "id": 1537,
       "isOwned": false,
       "shares": 0
+    }
+  ],
+  "news": [
+    {
+      "results": [
+        {
+          "id": "ZrxuJYI3Psj81sinM2qRxGUUZnwswA0UdKyHxPUDvM8",
+          "publisher": {
+            "name": "Zacks Investment Research",
+            "homepage_url": "https://www.zacks.com/",
+            "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+            "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+          },
+          "title": "Q3 Earnings: Tech Sector in Focus",
+          "author": "Sheraz Mian",
+          "published_utc": "2023-10-27T21:55:00Z",
+          "article_url": "https://www.zacks.com/commentary/2174029/q3-earnings-tech-sector-in-focus",
+          "tickers": [
+            "AMZN",
+            "AAPL",
+            "MSFT",
+            "NVDA",
+            "TSLA",
+            "GOOGL",
+            "META"
+          ],
+          "amp_url": "https://www.zacks.com/amp/commentary/2174029/q3-earnings-tech-sector-in-focus",
+          "image_url": "https://staticx-tuner.zacks.com/images/articles/main/a9/50721.jpg",
+          "description": "Strong Q3 results from mega-cap Tech players have helped the aggregate Q3 earnings growth rate for the S&P 500 index turn positive in recent days. Regarding the 'Big 7', Apple and Nvidia now represent the final members of the group yet to report."
+        },
+        {
+          "id": "Sass-g0l2ELLLQrCpAbhdHzU-o-PN2hk22jkv_nitg4",
+          "publisher": {
+            "name": "MarketWatch",
+            "homepage_url": "https://www.marketwatch.com/",
+            "logo_url": "https://s3.polygon.io/public/assets/news/logos/marketwatch.svg",
+            "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/marketwatch.ico"
+          },
+          "title": "Is it better to buy bonds or bond funds? It depends how hard you are willing to work.",
+          "author": "MarketWatch",
+          "published_utc": "2023-10-27T21:13:00Z",
+          "article_url": "https://www.marketwatch.com/story/individual-bonds-vs-bond-etfs-and-funds-how-hard-are-you-willing-to-work-2d614dd7",
+          "tickers": [
+            "AAPL",
+            "DIS",
+            "BND"
+          ],
+          "amp_url": "https://www.marketwatch.com/amp/story/individual-bonds-vs-bond-etfs-and-funds-how-hard-are-you-willing-to-work-2d614dd7",
+          "image_url": "https://images.mktw.net/im-874620/social",
+          "description": "Investors don’t like to see bond prices go down, but they should be in it for the yield."
+        },
+        {
+          "id": "BXl6SE0AOW3BI1zTS1M4K23S8WOSBxQDlAagKzu69N0",
+          "publisher": {
+            "name": "MarketWatch",
+            "homepage_url": "https://www.marketwatch.com/",
+            "logo_url": "https://s3.polygon.io/public/assets/news/logos/marketwatch.svg",
+            "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/marketwatch.ico"
+          },
+          "title": "Sell the S&P 500. Buy this instead.",
+          "author": "MarketWatch",
+          "published_utc": "2023-10-27T21:08:00Z",
+          "article_url": "https://www.marketwatch.com/story/sell-the-s-p-500-buy-this-instead-62abf15b",
+          "tickers": [
+            "AAPL",
+            "AMZN",
+            "GOOG",
+            "GOOGL",
+            "META",
+            "MSFT",
+            "NVDA",
+            "TSLA",
+            "CSCO",
+            "INTC",
+            "WMT",
+            "GE",
+            "QCOM",
+            "RSP",
+            "EUSA"
+          ],
+          "amp_url": "https://www.marketwatch.com/amp/story/sell-the-s-p-500-buy-this-instead-62abf15b",
+          "image_url": "https://images.mktw.net/im-875775/social",
+          "description": "Every two weeks, all around the country, working Americans have money deducted from their paychecks and diverted into their 401(k)s. This probably includes you."
+        },
+        {
+          "id": "ZlvJFCEIGQxba4afU122KSM0iJI5_YPILrLJCI_uFOA",
+          "publisher": {
+            "name": "Investing.com",
+            "homepage_url": "https://www.investing.com/",
+            "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+            "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+          },
+          "title": "Master the Art of Fundamental Analysis With InvestingPro: Earnings Growth",
+          "author": "Investing.com",
+          "published_utc": "2023-10-27T20:40:00Z",
+          "article_url": "https://www.investing.com/analysis/master-the-art-of-fundamental-analysis-with-investingpro-earnings-growth-200643043",
+          "tickers": [
+            "AAPL"
+          ],
+          "amp_url": "https://m.investing.com/analysis/master-the-art-of-fundamental-analysis-with-investingpro-earnings-growth-200643043?ampMode=1",
+          "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg"
+        },
+        {
+          "id": "NWBBCk9quhOly8Qys1QlvPjM6iCNPaiglj_538Bad8o",
+          "publisher": {
+            "name": "Benzinga",
+            "homepage_url": "https://www.benzinga.com/",
+            "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+            "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+          },
+          "title": "Bears Roam Wall Street As Middle East Conflict, Earnings Outlook Raise Concerns Despite Strong Q3 US Economic Growth: This Week In Markets",
+          "author": "Piero Cingari",
+          "published_utc": "2023-10-27T20:33:57Z",
+          "article_url": "https://www.benzinga.com/news/earnings/23/10/35474151/bears-roam-wall-street-as-middle-east-conflict-earnings-outlook-raise-concerns-despite-strong-q3-us",
+          "tickers": [
+            "LLY",
+            "ABNB",
+            "MCD",
+            "WTV",
+            "DIA",
+            "PFE",
+            "PDD",
+            "ROL",
+            "SPY",
+            "WHR",
+            "WTW",
+            "TLT",
+            "AAPL",
+            "AAPL",
+            "QQQ",
+            "ALGN",
+            "MDLZ",
+            "AMGN",
+            "ENPH",
+            "AMZN",
+            "MDLZ",
+            "QCOM",
+            "GOOGL",
+            "SBUX",
+            "JD",
+            "AMD",
+            "SPGI",
+            "CAT",
+            "BKNG",
+            "COP",
+            "META",
+            "CVS"
+          ],
+          "amp_url": "https://www.benzinga.com/amp/content/35474151",
+          "image_url": "https://cdn.benzinga.com/files/images/story/2023/Bearish_stock_chart..jpeg?width=1200&height=800&fit=crop",
+          "description": "It has been another week of volatility in the stock market, characterized by mounting fears of a wider Middle East conflict and a more cautious fourth-quarter earnings outlook announced by U.S. corporations.\nInvestors absorbed the latest economic data, which revealed stronger-than-expected growth in the third quarter and inflation in line with expectations in September, solidifying forecasts of unchanged interest rates at the upcoming Federal Open Market Committee Meeting next week.\nUS GDP Growth Beats Expectations, Fueled by Strong Consumer Spending: The U.S. economy exceeded expectations in the third quarter, recording a robust 4.9% growth rate, according to advance estimates. This result outperformed economist projections of a 4.3% growth rate. The primary driver behind the number: robust  consumer spending, which increased at an annualized rate of 4%.\nBill Ackman Exits Treasury Shorts, Cites Growing Economic Concerns: Renowned hedge fund billionaire Bill Ackman took to social media platform X to announce that he closed his short positions in U.S. Treasury bonds. Ackman attributes this decision to expectations the economy is slowing down more rapidly than recent data indicates and expressed his concern about the level of risk in the world.\nBitcoin Rallies As ETF Approval Nears: Bitcoin (CRYPTO: BTC) had a robust week of gains, marking a double-digit return and reaching its highest level in over five months. The D.C. Circuit Court of Appeals settled a dispute between the U.S. Securities and Exchange Commission and Grayscale, instructing ...Full story available on Benzinga.com",
+          "keywords": [
+            "Sector ETFs",
+            "Earnings",
+            "Equities",
+            "Macro Economic Events",
+            "Earnings Beats",
+            "Earnings Misses",
+            "Broad U.S. Equity ETFs",
+            "Bonds",
+            "Top Stories",
+            "Economics",
+            "Federal Reserve",
+            "Markets",
+            "Tech",
+            "ETFs"
+          ]
+        },
+        {
+          "id": "g1s5mGsVe3Ndxj8y5UxFE8Tic2ipHR6RxmOk6rK4qms",
+          "publisher": {
+            "name": "MarketWatch",
+            "homepage_url": "https://www.marketwatch.com/",
+            "logo_url": "https://s3.polygon.io/public/assets/news/logos/marketwatch.svg",
+            "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/marketwatch.ico"
+          },
+          "title": "'Magnificent Seven' stocks have shed more than $1.2 trillion in value since the market's July peak",
+          "author": "MarketWatch",
+          "published_utc": "2023-10-27T19:39:00Z",
+          "article_url": "https://www.marketwatch.com/story/magnificent-seven-stocks-have-shed-more-than-1-2-trillion-in-value-since-the-markets-july-peak-bdec1e78",
+          "tickers": [
+            "GOOGL",
+            "GOOG",
+            "AMZN",
+            "META",
+            "TSLA",
+            "MSFT",
+            "AAPL",
+            "NVDA",
+            "COMP",
+            "DJIA"
+          ],
+          "amp_url": "https://www.marketwatch.com/amp/story/magnificent-seven-stocks-have-shed-more-than-1-2-trillion-in-value-since-the-markets-july-peak-bdec1e78",
+          "image_url": "https://images.mktw.net/im-713498/social",
+          "description": "The so-called \"Magnificent Seven\" megacap technology stocks that have powered practically all of this year's rally in the S&P 500 have seen more than $1.2 trillion in value evaporate since stocks peaked at the end of July."
+        },
+        {
+          "id": "CpPEccqXdICkopLT8IXSLoO8YpB0xrje685tY0xnOSg",
+          "publisher": {
+            "name": "Benzinga",
+            "homepage_url": "https://www.benzinga.com/",
+            "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+            "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+          },
+          "title": "Masimo Might See Potential Royalty Windfall From ITC's Exclusion Order On Apple Watch: Analyst",
+          "author": "Nabaparna Bhattacharya",
+          "published_utc": "2023-10-27T18:44:25Z",
+          "article_url": "https://www.benzinga.com/analyst-ratings/analyst-color/23/10/35469885/masimo-might-see-potential-royalty-windfall-from-itcs-exclusion-order-on-apple-watc",
+          "tickers": [
+            "MASI",
+            "AAPL"
+          ],
+          "amp_url": "https://www.benzinga.com/amp/content/35469885",
+          "image_url": "https://cdn.benzinga.com/files/images/story/2023/10/27/mmsi_0.png?width=1200&height=800&fit=crop",
+          "description": "Needham analyst Mike Matson reiterated a Buy rating on Masimo Corporation (NASDAQ: MASI) with a price target of $136.\nOn Thursday, the ITC upheld a January judge's decision in an exclusion order, which found Apple Inc. (NASDAQ: AAPL) guilty of infringing Masimo's patent rights. These rights pertain to a light-based technology used in blood-oxygen-level monitoring. \nThe exclusion is scheduled to go into effect after a 60-day Presidential review period. \nIf MASI is ultimately successful, Apple might be forced to pay royalties, the analyst notes.\nMatson estimates that ...Full story available on Benzinga.com",
+          "keywords": [
+            "News",
+            "Analyst Color",
+            "Equities",
+            "Price Target",
+            "Reiteration",
+            "Markets",
+            "Analyst Ratings",
+            "Trading Ideas"
+          ]
+        },
+        {
+          "id": "2O55XkIHEGixLXTGxEI2MbOrXCAjnwgzGyIwYj77quQ",
+          "publisher": {
+            "name": "Benzinga",
+            "homepage_url": "https://www.benzinga.com/",
+            "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+            "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+          },
+          "title": "US Stocks Waver, Tech Outperforms As September Inflation Data Solidifies Interest Rate Hold; Oil Giants Fall: What's Driving Markets Friday?",
+          "author": "Shanthi Rexaline",
+          "published_utc": "2023-10-27T18:09:07Z",
+          "article_url": "https://www.benzinga.com/news/earnings/23/10/35460910/nasdaq-s-p-500-eye-rebound-while-bitcoin-edges-down-amazons-q3-lifts-tech-stocks-as-traders-eye-fed",
+          "tickers": [
+            "AN",
+            "CL",
+            "DIA",
+            "COF",
+            "FEZ",
+            "CVX",
+            "FXE",
+            "F",
+            "SPY",
+            "SNY",
+            "TLT",
+            "XOM",
+            "USO",
+            "CHTR",
+            "UUP",
+            "QQQ",
+            "XLE",
+            "ENPH",
+            "XLY",
+            "META",
+            "AAPL",
+            "AMZN",
+            "DXCM",
+            "INTC",
+            "MASI"
+          ],
+          "amp_url": "https://www.benzinga.com/amp/content/35460910",
+          "image_url": "https://cdn.benzinga.com/files/images/story/2023/Wall_Street_sign_16.jpeg?width=1200&height=800&fit=crop",
+          "description": "It’s a mixed Friday on Wall Street, with tech investors cheering stellar earnings from Amazon.com, Inc. (NASDAQ:AMZN) and an in-line personal consumption expenditure inflation rate, while bears continued to weigh on the broader stock market. \nEconomists perceived the latest data on the Fed’s preferred inflation gauge as a favorable reading that will convince the Fed to keep rates unchanged next week.  \nFord Motor Co (NYSE:F) dropped approximately 10% after falling short of quarterly estimates and revising its guidance due to the UAW strike. Oil giants reporting Friday — including Exxon Mobil Corp. (NYSE:XOM) and Chevron Corp. (NYSE:CVX) — fell 2.2% and 5.6%, respectively, after disappointing results. \nCues From Friday’s Trading:\nThe S&P 500 experienced a 0.4% decline, marking its eighth session of losses out of the last nine and a 2.5% decrease for the week. The Nasdaq 100 saw a 0.5% increase but remained 2.6% lower for the week, while the Dow tumbled 0.8%, down 1.8% for the week. Small caps in the Russell 2000 also fell by 1%, extending their weekly losses to 2.5%.\n                                                                US Index ...Full story available on Benzinga.com",
+          "keywords": [
+            "Sector ETFs",
+            "News",
+            "Earnings",
+            "Equities",
+            "Broad U.S. Equity ETFs",
+            "Top Stories",
+            "Economics",
+            "Federal Reserve",
+            "Markets",
+            "Movers",
+            "Trading Ideas",
+            "ETFs"
+          ]
+        },
+        {
+          "id": "mGfFbBr5oqiTlQdEOKdlHMj6RGhjgsckA1_zDROLYSg",
+          "publisher": {
+            "name": "MarketWatch",
+            "homepage_url": "https://www.marketwatch.com/",
+            "logo_url": "https://s3.polygon.io/public/assets/news/logos/marketwatch.svg",
+            "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/marketwatch.ico"
+          },
+          "title": "As the 2023 NBA season begins, here are the 10 highest-paid players",
+          "author": "MarketWatch",
+          "published_utc": "2023-10-27T17:45:00Z",
+          "article_url": "https://www.marketwatch.com/story/as-the-2023-nba-season-begins-here-are-the-10-highest-paid-players-3270bace",
+          "tickers": [
+            "WU",
+            "AXP",
+            "BUD",
+            "GOOG",
+            "UAA",
+            "SPOT",
+            "NKE",
+            "COIN",
+            "UBER",
+            "KMX",
+            "JPM",
+            "AAPL",
+            "PEP",
+            "SONY"
+          ],
+          "amp_url": "https://www.marketwatch.com/amp/story/as-the-2023-nba-season-begins-here-are-the-10-highest-paid-players-3270bace",
+          "image_url": "https://images.mktw.net/im-873778/social",
+          "description": "Two NBA stars will make over $100 million this year."
+        },
+        {
+          "id": "AMkrbgdIcz9YG5Ltsskx2-s4XV5Eqa5pD8got4oCSO4",
+          "publisher": {
+            "name": "The Motley Fool",
+            "homepage_url": "https://www.fool.com/",
+            "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+            "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+          },
+          "title": "Big Banks and Big Rates",
+          "author": "newsfeedback@fool.com (the Motley Fool Staff)",
+          "published_utc": "2023-10-27T17:28:00Z",
+          "article_url": "https://www.fool.com/investing/2023/10/27/big-banks-and-big-rates/",
+          "tickers": [
+            "BAC",
+            "PEP",
+            "DIS",
+            "GOOGL",
+            "AAPL",
+            "AMZN",
+            "JPM",
+            "WFC",
+            "ISRG",
+            "GOOG",
+            "SQ",
+            "TEAM",
+            "TWLO",
+            "SPOT",
+            "ZM",
+            "OM",
+            "CART",
+            "BIRK"
+          ],
+          "image_url": "https://g.foolcdn.com/editorial/images/751475/mfm_20231013.jpg",
+          "description": "The major banks are cashing in on high interest rates, but cracks continue to show in the picture of the consumer.",
+          "keywords": [
+            "investing"
+          ]
+        }
+      ],
+      "status": "OK",
+      "request_id": "8eb5b6f3a5da6b5eb475c54005c1e697",
+      "count": 10,
+      "next_url": "https://api.polygon.io/v2/reference/news?cursor=YXA9MjAyMy0xMC0yN1QxNyUzQTI4JTNBMDBaJmFzPUFNa3JiZ2RJY3o5WUc1THRzc2t4Mi1zNFhWNUVxYTVwRDhnb3Q0b0NTTzQmb3JkZXI9ZGVzY2VuZGluZyZ0aWNrZXI9QUFQTA"
     }
   ]
 }
