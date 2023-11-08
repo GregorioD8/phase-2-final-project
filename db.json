@@ -159,6 +159,38 @@
       "total": 2043.48,
       "date": "10/30/2023, 7:11:33 PM",
       "id": 20
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 9,
+      "pricePaid": "170.77",
+      "total": 1536.93,
+      "date": "10/31/2023, 5:33:58 PM",
+      "id": 21
+    },
+    {
+      "ticker": "AAPL",
+      "numberOrdered": 7,
+      "pricePaid": "170.77",
+      "total": 1195.39,
+      "date": "11/1/2023, 10:46:19 AM",
+      "id": 22
+    },
+    {
+      "ticker": "TSLA",
+      "numberOrdered": 7,
+      "pricePaid": "200.84",
+      "total": 1405.88,
+      "date": "11/1/2023, 10:55:32 AM",
+      "id": 23
+    },
+    {
+      "ticker": "TSLA",
+      "numberOrdered": 9,
+      "pricePaid": "200.84",
+      "total": 1807.56,
+      "date": "11/1/2023, 11:14:02 AM",
+      "id": 24
     }
   ],
   "tickers": [
@@ -168,7 +200,7 @@
       "title": "Apple Inc.",
       "id": 0,
       "isOwned": true,
-      "shares": 38
+      "shares": 45
     },
     {
       "cik_str": 789019,
@@ -216,7 +248,7 @@
       "title": "Tesla, Inc.",
       "id": 6,
       "isOwned": true,
-      "shares": 33
+      "shares": 49
     },
     {
       "cik_str": 1067983,
