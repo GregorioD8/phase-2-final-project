@@ -2,20 +2,23 @@ import React, { useState } from "react"
 import Stock from "./Stock"
 import TradingViewWidget from "./TradingViewWidget"
 
-function Search({ searchInput, onSearch, stock, onBuyStock, allTickers, onOrder, onSelectedTicker }) {
 
+function Search({ searchInput, onSearch, stock, onBuyStock, allTickers, onOrder, onSelectedTicker }) {
   const [isStockCard, setIsStockCard] = useState(false)
+
 
   function handleClick(s) {
     onSelectedTicker(allTickers.find((t) => t.ticker === s.target.value).ticker)
     setIsStockCard(true)
-
   }
+
 
   function handleSearch(e) {
     e.preventDefault()
     onSearch(e.target.value)
   }
+
+
   const viewableStocks = allTickers.map((s) => (
     <option id="dropdown" key={s.id}
       value={s.ticker}
@@ -23,6 +26,7 @@ function Search({ searchInput, onSearch, stock, onBuyStock, allTickers, onOrder,
       {s.ticker}
     </option>
   ))
+
 
   return (
     <div className="ui search">
@@ -54,6 +58,7 @@ function Search({ searchInput, onSearch, stock, onBuyStock, allTickers, onOrder,
 
   )
 }
+
 export default Search
 
 

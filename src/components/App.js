@@ -21,21 +21,24 @@ function App() {
   const [news, setNews] = useState(null)
 
 
+  //gets static news articles saved to json server
   useEffect(() => {
     fetch(" http://localhost:8080/news")
       .then((res) => res.json())
       .then((data) => {
         setNews(data[0].results)
       })
-
   }, [])
 
+
+  //gets saved orders from json server on initial render
   useEffect(() => {
     fetch(" http://localhost:8080/orders")
       .then((res) => res.json())
       .then((data) =>
         setAllOrders(data))
   }, [])
+
 
   //thank you polygon.io
   useEffect(() => {
@@ -48,6 +51,7 @@ function App() {
         })
   }, [query])
 
+
   //thanks sec.gov
   useEffect(() => {
     fetch(" http://localhost:8080/tickers")
@@ -56,16 +60,21 @@ function App() {
         setAllTickers(data)
       })
   }, [])
+
+
   //sets the search input per character to see what tickers include the input
   function onSearch(input) {
 
     setSearchInput(input)
   }
+
+
   //sets the ticker to search for 
   function handleSelectedTicker(ticker) {
     setQuery(ticker)
     setSearchInput("")
   }
+
 
   //purchase x amount of shares of a stonk
   //sets state for ownedStocks to update the chart in portfolio
@@ -74,17 +83,19 @@ function App() {
     setAllTickers(allStocks)
   }
 
+
   //update orders
   function handleOrder(newOrder) {
     setAllOrders([...allOrders, newOrder])
     console.log("handleOrder")
-
   }
+
 
   //search by ticker 
   const filteredTickers = allTickers.filter((t) => {
     return t.ticker.toLowerCase().includes(searchInput.toLowerCase())
   })
+
 
   //Thank you Tradingview.com
   /////////////////////////////////////////////////////////////////////////////////////
@@ -132,57 +143,14 @@ function App() {
       }
     },
     [query]
-  );
-
+  )
   /////////////////////////////////////////////////////////////////////////////////////
-  
-  /** 
-  
-  ///////////////////////////////////
-  // //for Challenge2              //
-  ///////////////////////////////////
-
-   const [names, setNames] = useState(["Greg"])
-   function handleNameSubmit(newName) {
-     setNames([...names, newName])
-     console.log(names)
-  }
-  console.log(names)
-  /////////////////////////////////// end of Challenge2
-  */ 
-
-
-   ///////////////////////////////////
-   //for Challenge3                //
-  //////////////////////////////////
-  
-  // const [animals, setAnimals] = useState([{id: 1, name: "Ron", species: "Lion", hungry: true}, {id: 2, name: "Leslie", species: "Rabbit", hungry: false}, {id: 3, name: "Ann", species: "Koala", hungry: false}, {id: 4, name: "April", species: "Hyena", hungry: true}])
-
-  /////////////////////////////////// end of Challenge3
-
-    ///////////////////////////////////
-   //for Challenge4                 //
-  ///////////////////////////////////
-  
-  const [items, setItems] = useState([{id: 1, name: "Milk", category: "Dairy", price: 2}, {id: 2, name: "Banana", category: "Produce", price: 10}, {id: 3, name: "Vanilla Ice Cream", category: "Dairy", price: 4}, {id: 4, name: "Saffron Truffle Gold-Flecked Ice Cream", category: "Dairy", price: 14}, {id: 5, name: "Spinach", category: "Produce", price: 4}, {id: 6, name: "Pomegranates", category: "Produce", price: 11}])
-
-  /////////////////////////////////// end of Challenge4
+  //this code from Tradingview.com
 
   return (
     <div>
       <Router>
-        {/* for Challenge1 */}
-        {/* <Header/> */}
-
-        {/* for Challenge2 */}
-        {/* <Header names={names} onNameSubmit={handleNameSubmit}/>  */}
-        
-        {/* for Challenge3 */}
-        {/* <Header animals={animals}/> */}
-          
-          {/* for Challenge4 */}
-          <Header items={items}/>
-
+        <Header />
         <Routes>
           <Route path="/" element={<Home news={news} />} />
           <Route path="/research" element={<Research
@@ -197,12 +165,10 @@ function App() {
           <Route path="/portfolio" element={<Portfolio
             allOrders={allOrders}
             allTickers={allTickers}
-
           />} />
         </Routes>
         <Footer />
       </Router>
-
     </div>
   );
 }

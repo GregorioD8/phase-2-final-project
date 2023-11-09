@@ -1,9 +1,11 @@
 import React from "react"
 import NewsCard from "./NewsCard"
 
+
 function Home({ news }) {
 
   if (!news) return <div></div>
+
   const myNews = news.map((s) => (
     <div key={s.id} className="px-5 flex align-items-stretch"
     >
@@ -12,7 +14,7 @@ function Home({ news }) {
     </div>
   ))
 
-  // console.log(news)
+
   return (
     <div >
       <div style={{
@@ -37,4 +39,5 @@ function Home({ news }) {
 
   )
 }
+
 export default Home

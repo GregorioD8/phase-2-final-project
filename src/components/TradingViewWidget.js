@@ -1,9 +1,9 @@
 // TradingViewWidget.jsx
-
 import React from 'react';
 
 
 function TradingViewWidget() {
+
 
   return (
     <div className='tradingview-widget-container'>
@@ -11,4 +11,5 @@ function TradingViewWidget() {
     </div>
   );
 }
+
 export default TradingViewWidget

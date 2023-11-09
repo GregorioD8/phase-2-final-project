@@ -1,7 +1,5 @@
 import React from "react"
 import Search from "./Search"
-// import Stock from "./Stock"
-// import TradingViewWidget from "./TradingViewWidget"
 
 function Research({ stock, onSearch, searchInput, allTickers, onSelectedTicker, onBuyStock, onOrder }) {
 
@@ -16,7 +14,6 @@ function Research({ stock, onSearch, searchInput, allTickers, onSelectedTicker, 
             onOrder={onOrder}
             onSelectedTicker={onSelectedTicker}
             /> 
-
             </div>
         </div>
     )

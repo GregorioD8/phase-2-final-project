@@ -26,11 +26,8 @@ function Chart({ total, allTickers }) {
           }
         }}
       />
-
-
     </div>
   );
-
 }
 
 export default Chart
